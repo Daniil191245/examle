@@ -1,3 +1,14 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .text{
     text-transform: lowercase;
     text-indent: 2%;
@@ -5,4 +16,6 @@
     word-break: normal;
     letter-spacing: 2px;
     word-spacing: 20px;
+    font-weight: 500;
+
 }
