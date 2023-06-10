@@ -1,5 +1,4 @@
-
-*{
+/* *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -18,4 +17,22 @@ body{
     word-spacing: 20px;
     font-weight: 500;
 
+} */
+
+/* ------------------Другий урок---------------- */
+.paragraph{
+    /* назва шрифтів які необхідні */
+    font-family: 'Roboto', sans-serif;
+    /* висота рядка */
+    line-height: 34px;
+    /* відстань між словами */
+    word-spacing: 2px;
+    /* відстань між буквами */
+    letter-spacing: 1px;
+    /* розмір шрифту */
+    font-size: 24px; 
+    /* жирність шрифту */
+    font-weight: 100;
+    color: brown;
 }
+
