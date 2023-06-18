@@ -20,19 +20,57 @@ body{
 } */
 
 /* ------------------Другий урок---------------- */
-.paragraph{
-    /* назва шрифтів які необхідні */
+/* .paragraph{
     font-family: 'Roboto', sans-serif;
-    /* висота рядка */
     line-height: 34px;
-    /* відстань між словами */
     word-spacing: 2px;
-    /* відстань між буквами */
     letter-spacing: 1px;
-    /* розмір шрифту */
     font-size: 24px; 
-    /* жирність шрифту */
     font-weight: 100;
     color: brown;
+} */
+*
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+p{
+    width: 100px;
+    /* за часовою стрілкою починаючи згори */
+    padding: 20px 10px 30px 10px;
+    padding: 100px 15px ;
 
+    
+    border: 2px solid red;
+    border-radius: 50%;
+    /* border-right: 22px;
+    border-color: rgba(33, 33, 33, 0.2);;
+    border-style: groove; */
+}
+.is-hidden{
+    visibility: hidden;
+    opacity: 1;
+}
+.section{
+    padding: 94px 0px;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.heading{
+    margin-bottom: 10px;
+}
