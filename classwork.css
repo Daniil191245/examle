@@ -70,6 +70,8 @@ p{
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+    /* align-items: center;
+    justify-content: center; */
 }
 .heading{
     margin-bottom: 10px;
