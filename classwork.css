@@ -76,3 +76,19 @@ p{
 .heading{
     margin-bottom: 10px;
 }
+/* .list{
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: ;
+    align-content: center;
+} */
+.list{
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(4, 1fr);
+    /* column-gap: 30px; */
+    gap: 30px 50px;
+}
