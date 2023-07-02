@@ -29,7 +29,6 @@ body{
     font-weight: 100;
     color: brown;
 } */
-*
 *{
     padding: 0;
     margin: 0;
@@ -54,7 +53,7 @@ p{
 
     
     border: 2px solid red;
-    border-radius: 50%;
+    /* border-radius: 50px; */
     /* border-right: 22px;
     border-color: rgba(33, 33, 33, 0.2);;
     border-style: groove; */
@@ -90,5 +89,28 @@ p{
     grid-template-rows: 200px;
     grid-template-columns: repeat(4, 1fr);
     /* column-gap: 30px; */
+    flex-basis: 300px;
+    max-width: 300px;
     gap: 30px 50px;
+}
+/* ------------------------------------------------- */
+.containers{
+    max-width: 960px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 8px;
+}
+.sidebar{
+    flex-basis: 200px;
+}
+.content{
+    flex-grow: 1;
+    flex-shrink: 500px;
+}
+.sidebar,.content{
+    height: 300px;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 5px;
 }
