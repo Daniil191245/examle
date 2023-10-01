@@ -1,0 +1,12 @@
+.vector{
+    fill: black;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.svgg{
+    color: black;
+    font-size: 60px;
+    cursor: pointer;
+    font-style: italic;
+    margin-right: 120px;
+}
