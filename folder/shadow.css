@@ -1,9 +1,0 @@
-/* .text-list{
-    background: rgb(2,0,36);
-background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(107,124,14,1) 100%, rgba(0,212,255,1) 100%);
-} */
-.text-list{
-    -webkit-box-shadow: -17px 3px 6px 3px rgba(94,145,93,0.88);
--moz-box-shadow: -17px 3px 6px 3px rgba(94,145,93,0.88);
-box-shadow: -17px 3px 6px 3px rgba(94,145,93,0.88);
-}

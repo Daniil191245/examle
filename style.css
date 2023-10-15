@@ -1,96 +1,67 @@
 *{
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
     border: 0;
     box-sizing: border-box;
 }
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    z-index: 100;
-    background-color: brown;
+ul,ol{
+    list-style: none;
 }
-.box{
-    width: 150px;
-    height: 150px;
-}
-.green{
-    left: 50%;
-    top: 50%;
-    z-index: 3;
-    position: relative;
-    background-color: green;
-}
-.yellow{
-    position: absolute;
-    z-index: 1;
-    background-color: yellow;
-}
-.blue{
-    position: fixed;
-    z-index: 2;
-    background-color: blue;
-}
-.div{
-position: relative;
-left: 50%;
-width: 250px;
-height: 250px;
-background-color: black;
-}
-.div2{
-position: absolute;
-width: 120px;
-height: 120px;
-background-color: aqua;
-}
-
-.sticky{
-    width: 300px;
-    height: 300px;
-    background-color: blueviolet;
-    position: sticky;
-    right: 0;
-    bottom: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.list-item{
+.user-information{
     display: flex;
-    padding-top: 50px;
-}
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    opacity: 0;
 
-.item::before{
-content: "";
-display: block;
-width: 237px;
-height: 235px;
-background-color: chartreuse;
-position: absolute;
-top: -240px;
-left: 0;
-}
 
-.item{
-    width: 330px;
-    height: 525px;
-    border-radius: 25px;
+}
+.user-soc:not(:last-child){
+    margin-right: 30px;
+}
+.worker{
+    width: 270px;
+    height: 260px;
+}
+.div-card{
     position: relative;
-    background-color: bisque;
+    top: 200px;
+    left: 200px;
+    width: 270px;
+    height: 260px;
+    /* display: block; */
+    display: inline-block;
+    overflow: auto;
+}
+.div-card:hover .user-information{
+opacity: 1;
+}
+.text{
+    margin-top: 200px;
+    height: 50px;
+    overflow: scroll;
+}
+
+
+.section-title{
+    position: sticky;
+    top: 0px;
+    background-color: red;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section:nth-child(1) .section-title{
+    color: #fff;
+    background-color: red;
+}
+.section:nth-child(2) .section-title{
+    color: #fff;
+    background-color: red;
+}
+.section:nth-child(1) .section-title{
+    color: #fff;
+    background-color: red;
 }
