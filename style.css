@@ -4,64 +4,129 @@
     border: 0;
     box-sizing: border-box;
 }
-ul,ol{
-    list-style: none;
+body::-webkit-scrollbar{
+    width: 50px;
+    background-color: red;
 }
-.user-information{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-    opacity: 0;
 
-
-}
-.user-soc:not(:last-child){
-    margin-right: 30px;
-}
-.worker{
-    width: 270px;
-    height: 260px;
-}
-.div-card{
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow:inset 0 0 6px black;
+background-color: black;
+}  
+.box{
     position: relative;
-    top: 200px;
-    left: 200px;
-    width: 270px;
-    height: 260px;
-    /* display: block; */
-    display: inline-block;
-    overflow: auto;
+width: 1000px;
+height: 1000px;
+background-color: chartreuse;
+margin: 0 auto;
+margin-top: 100px;
+margin-bottom: 100px;
 }
-.div-card:hover .user-information{
-opacity: 1;
+.box1{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
 }
-.text{
-    margin-top: 200px;
-    height: 50px;
-    overflow: scroll;
+.box2{
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
 }
 
 
-.section-title{
-    position: sticky;
-    top: 0px;
-    background-color: red;
-    text-align: center;
-    text-transform: uppercase;
+.circle{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
-.section:nth-child(1) .section-title{
-    color: #fff;
-    background-color: red;
+.circle1{
+position: absolute;
+top: 10%;
+left: 35%;
+width: 250px;
+height: 250px;
+border-radius: 120px;
+border: 2px solid black;
+background-color: red;
 }
-.section:nth-child(2) .section-title{
-    color: #fff;
-    background-color: red;
-}
-.section:nth-child(1) .section-title{
-    color: #fff;
-    background-color: red;
-}
+.circle2{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 250px;
+    height: 250px;
+    border-radius: 120px;
+    border: 2px solid black;
+    background-color: yellow;
+    }
+    .circle3{
+        position: absolute;
+        right: 39%;
+        bottom: 5%;
+        width: 250px;
+        height: 250px;
+        border-radius: 120px;
+        border: 2px solid black;
+        background-color: green;
+        }
+
+
+
+
+
+
+
+
+        .box-figure{
+            position: relative;
+            width: 900px;
+            height: 800px;
+            background-color: aquamarine;
+            margin: 0 auto;
+        }
+        .figure1{
+            position: absolute;
+            top: 50px;
+            left: 80px;
+            border: 8px solid black;
+            width: 230px;
+            height: 150px;
+            background-color: brown;
+        }
+        .figure2{
+            position: absolute;
+            top: 50px;
+            right: 60px;
+            border: 8px solid black;
+            width: 470px;
+            height: 320px;
+            background-color: green;
+        }
+        .figure3{
+            position: absolute;
+            left: 80px;
+            bottom: 130px;
+            border: 8px solid black;
+            width: 230px;
+            height: 430px;
+            background-color: blue;
+        }
+        .figure4{
+            position: absolute;
+            right: 60px;
+            bottom: 130px;
+            border: 8px solid black;
+            width: 470px;
+            height: 220px;
+            background-color: yellow;
+        }
