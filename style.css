@@ -4,7 +4,7 @@
     border: 0;
     box-sizing: border-box;
 }
-body::-webkit-scrollbar{
+/* body::-webkit-scrollbar{
     width: 50px;
     background-color: red;
 }
@@ -13,7 +13,8 @@ body::-webkit-scrollbar-thumb{
     border-radius: 10px;
     -webkit-box-shadow:inset 0 0 6px black;
 background-color: black;
-}  
+}   */
+/* first task */
 .box{
     position: relative;
 width: 1000px;
@@ -40,7 +41,7 @@ margin-bottom: 100px;
     background-color: aliceblue;
 }
 
-
+/* the second task */
 .circle{
     position: relative;
     width: 1000px;
@@ -80,19 +81,14 @@ background-color: red;
         background-color: green;
         }
 
-
-
-
-
-
-
-
+/* the third task */
         .box-figure{
             position: relative;
             width: 900px;
             height: 800px;
             background-color: aquamarine;
             margin: 0 auto;
+            margin-bottom: 150px;
         }
         .figure1{
             position: absolute;
