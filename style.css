@@ -1,96 +1,36 @@
 *{
+    padding: 0;
     margin: 0;
-    /* padding: 0; */
     border: 0;
     box-sizing: border-box;
 }
-header{
+body{
+    height: 10000px;
+}
+.no-scroll{
+    overflow: hidden; 
+    /* (переповнення контенту) */
+}
+.backdrop{
     position: fixed;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 200px;
-    z-index: 100;
-    background-color: brown;
+    background-color:  rgba(0, 0, 0, 0.5);
+    opacity: 1;
 }
-.box{
-    width: 150px;
-    height: 150px;
+.backdrop.is-hidden{
+opacity: 0;
+pointer-events: none;
+/* курсор подія(блокування подій мишки (відповідає ця властивість)) */
 }
-.green{
-    left: 50%;
-    top: 50%;
-    z-index: 3;
-    position: relative;
-    background-color: green;
-}
-.yellow{
+.modal{
     position: absolute;
-    z-index: 1;
-    background-color: yellow;
-}
-.blue{
-    position: fixed;
-    z-index: 2;
-    background-color: blue;
-}
-.div{
-position: relative;
-left: 50%;
-width: 250px;
-height: 250px;
-background-color: black;
-}
-.div2{
-position: absolute;
-width: 120px;
-height: 120px;
-background-color: aqua;
-}
-
-.sticky{
-    width: 300px;
-    height: 300px;
-    background-color: blueviolet;
-    position: sticky;
-    right: 0;
-    bottom: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.list-item{
-    display: flex;
-    padding-top: 50px;
-}
-
-.item::before{
-content: "";
-display: block;
-width: 237px;
-height: 235px;
-background-color: chartreuse;
-position: absolute;
-top: -240px;
-left: 0;
-}
-
-.item{
-    width: 330px;
-    height: 525px;
-    border-radius: 25px;
-    position: relative;
-    background-color: bisque;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+height: 581px;
+background-color: blue;
+transform: translate(-50%, -50%);
 }
