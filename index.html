@@ -4,15 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body>
     <button class="button-open" data-modal-open>Відкрити модалку</button>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <!-- вікно -->
+      <div class="modal animate__animated animate__bounce">
         <button class="button" data-modal-close>Close</button>
+        <!-- <ul class="navigation">
+          <li class="nav-list-item">
+            <a class="navigation-list" href="">студія</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navigation-list" href="">портфоліо</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="navigation-list" href="">контакти</a>
+          </li>
+          <li>
+            <a class="navigation-contacts" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="navigation-contacts" href="tel:380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul> -->
       </div>
     </div>
+    <div class="animate__animated animate__bounce">bhdsjabvhjbdsjhka</div>
+
+    <footer>
+      <div class="div" data-aos="zoom-out-down">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ipsam
+        voluptatem accusantium et nam! Iure sit, omnis quo dolorem vitae animi
+        iste in fuga non illum, perferendis expedita impedit qui!
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
