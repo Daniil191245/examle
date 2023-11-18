@@ -1,61 +1,74 @@
 *{
-    padding: 0;
     margin: 0;
-    border: 0;
-    box-sizing: border-box;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box
 }
-body{
-    height: 10000px;
+.block{
+    width: 30%;
+    height: 100vh;
+    background-color: red;
+    /* vh - область нашого бачення */
+position: relative;
+    /* приховали всю нашу ширину */
+    transform: translateX(-90%);
+    transition: transform .5s linear;
 }
-ul,ol{
-    list-style: none;
+.block:hover{
+transform: translateX(0%);
 }
-a{
-    text-decoration: none;
+.menu-here{
+position: absolute;
+font-size: 22px;
+top: 50%;
+left: 50%;
+/* right: -52%; */
+transform: rotate(90deg) translate(-50%);
+transition: opacity 0.25s linear;
 }
-.no-scroll{
-    overflow: hidden; 
-    /* (переповнення контенту) */
+.block:hover .menu-here{
+    opacity: 0;
 }
-.backdrop{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color:  rgba(0, 0, 0, 0.5);
-    opacity: 1;
-    /* transition-property: ;
-    transition: opacity 0.5s, cubic-bezier(0.075, 0.82, 0.165, 1); */
-    /* visibility: visible; */
-}
-.backdrop.is-hidden{
-opacity: 0;
-pointer-events: none;
-/* курсор подія(блокування подій мишки (відповідає ця властивість)) */
-visibility: hidden;
-/* бачиність елемента (hidden не бачить) */
-}
-
-/* .backdrop.is-hidden .modal{
-    transform: translate(-50%,-50%) scale(0);
-    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
-} */
-
-.modal{
-    position: absolute;
+.button{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
     top: 50%;
     left: 50%;
-    width: 528px;
-height: 581px;
-background-color: blue;
-/* transform: translate(-50%, -50%) scale(1);
-transition: opacity 0.5s, cubic-bezier(0.075, 0.82, 0.165, 1) 1s, visibility 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s; */
+    transform: translate(-50%, -50%);
+    /* назва яка каже яку анімацію використовувати - назва анімації */
+    animation-name: bounceShoc;
 
+    /* animation-duration - тривалість анімації */
+    animation-duration: 1s;
 
+    /* animation-timing-function - поводження в часі під час анімації */
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    /* animation-iteration-count властивість яка дозволяє вказати кількість повторень анімацій */
+    animation-iteration-count: infinite;
+
+    /* animation-direction - вказує як буде поводитись анімаію (зривками або без зривками) */
+    animation-direction: alternate-reverse;
+    
+    animation-fill-mode: both;
+}
+/* @keyframes-ключові кадри  */
+@keyframes bounceShoc{
+/* 0% = from
+100% = to */
+from{
+    background-color: aqua;
+    top: 50%;
+    left: 50%;
+}
+to{
+    background-color: brown;
+    top: 40%;
+    left: 40%;
 }
 
 
-.div{
-    margin-top: 1000px;
+
 }
