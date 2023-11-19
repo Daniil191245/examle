@@ -53,6 +53,11 @@ transition: opacity 0.25s linear;
     animation-direction: alternate-reverse;
     
     animation-fill-mode: both;
+
+
+
+    /* Запис анімації в один рядок */
+    /* animation: bounceShoc 1s infinite alternate; */
 }
 /* @keyframes-ключові кадри  */
 @keyframes bounceShoc{
@@ -72,3 +77,4 @@ to{
 
 
 }
+
