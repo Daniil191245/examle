@@ -1,0 +1,29 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.iconTheme": "vscode-icons",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorTheme": "Black",
+  "explorer.confirmDelete": false,
+
+  // .map файли перестають генеруватись
+  "liveSassCompile.settings.generateMap": false,
+  // 
+  "liveSassCompile.settings.formats": [
+    {
+      // дозволяє обрати розширений формат або стиснутий формат файлу
+      "format": "expanded",
+      // властивість відпоідає за те з яким форматом буде відтворюватись файли
+      "extensionName": ".css",
+      // шлях збереження файлу
+      "savePath": "css",
+      // утворюю префікси для того щоб наш код був доступний під останні 5 версій браузера
+      "autoprefix": "last 5 versions"
+    }
+  ]
+}

@@ -1,3 +1,10 @@
+:root {
+  --main-color:black;
+  --accent-color:blue;
+  --svg-color:yellow;
+  --svg-hover-color:green;
+}
+
 body {
   width: 1000px;
   height: 1000px;
@@ -8,10 +15,22 @@ body:hover {
   background-color: aqua;
 }
 
+.hero-heading {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
 div {
   font-size: 200px;
   font-weight: 100px;
 }
 div:hover {
   font-size: 24px;
+}
+div::-moz-selection {
+  background-color: yellowgreen;
+}
+div::selection {
+  background-color: yellowgreen;
 }
