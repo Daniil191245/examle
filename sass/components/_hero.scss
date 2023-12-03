@@ -3,3 +3,17 @@
     text-transform: uppercase;
     color: var(--main-color);
 }
+.error{
+    @extend %button;
+    background-color: red;
+}
+
+.hero{
+
+    // @include = директива для використання міксинів
+    // border = назва міксину який використовуємо
+    // () = передаємо значення змінної $border у міксині
+    @include border(5px solid red, 20px);
+    width: 100px;
+    height: 600px;
+}

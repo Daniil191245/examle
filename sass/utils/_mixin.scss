@@ -1,0 +1,23 @@
+// дериктива собачка міксин
+// @mixin = функція
+// border = назва за якої ми будемо використовувати міксин
+// () = набір параметрів функцій
+// $border -???
+@mixin border($border, $borderRadius){
+    border: $border;
+    border-radius: $borderRadius;
+    // box-shadow: ;
+
+}
+
+
+@mixin flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin geometry($margin){
+    margin-left: $margin - 20px;
+    // $margin - 20px
+}

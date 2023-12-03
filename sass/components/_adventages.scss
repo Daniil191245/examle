@@ -1,0 +1,10 @@
+
+
+// всі змінні які пишуться всередені
+.adventages{
+    width: 100%;
+    height: 600px;
+    @include border(5px dashed green, 20px);
+    $color:red;
+    color: $color;
+}
