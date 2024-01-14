@@ -1,0 +1,11 @@
+.hero{
+    width: 100vw;
+    height: 700px;
+    background-image: url(../../assets/imgs/hero/hero-1x.webp);
+// всі ці перевірки вказують одній меті , вказати що наступні стилі для 2х стилів
+    @media (min-device-pixel-ratio:2), (min-resolution:192dpi), (min-resolution: 2dppx)
+    
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx)
+
+}
+

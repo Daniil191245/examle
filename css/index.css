@@ -4,10 +4,23 @@
   box-sizing: border-box;
 }
 
-.input:focus {
-  background-color: aqua;
-  color: red;
-  outline: none;
+body {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
 }
 
 .red {
@@ -55,7 +68,8 @@
   }
 }
 
-.img {
-  width: 450px;
-  height: 450px;
+.hero {
+  width: 100vw;
+  height: 700px;
+  background-image: url(../../assets/imgs/hero/hero-1x.webp);
 }
