@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
 </head>
 <body>
-    <!-- 270w, 3000w = дескриптор = значення яке пояснює браузеру коли вантажити ту чи іншу картинку з вказаних вами у srcset -->
-    <!-- <img class="img" src="./assets/imgs/team/1x/work1.webp" alt="">
-    <img class="img" src="./assets/imgs/team/2x/work2.webp" alt="">
-    <img class="img" src="./assets/imgs/team/3x/work3.webp" alt=""> -->
     
 
-                <section class="hero">
-                    <div>
-                        <div></div>
-                    </div>
-                </section>
+    <ul>
+        <li>
+            <picture>
+            <source srcset="
+            ./assets/imgs/partfolio/img1Dekstop1x.webp 1x, 
+            ./assets/imgs/partfolio/img1Dekstop2x.webp 2x,
+            ./assets/imgs/partfolio/img1Dekstop3x.webp 3x" media="(min-width: 1200px)"/>
+            <source srcset="
+            ./assets/imgs/partfolio/img1Tablet1x.webp 1x,
+            ./assets/imgs/partfolio/img1Tablet2x.webp 2x,
+            ./assets/imgs/partfolio/img1Tablet3x.webp 3x " media="(min-width: 768px)"/>
+            <source srcset="
+            ./assets/imgs/partfolio/img1Mobile1x.webp 1x,
+            ./assets/imgs/partfolio/img1Mobile2x.webp 2x,
+            ./assets/imgs/partfolio/img1Mobile3x.webp 3x" media="(min-width: 320px)"/>
+            <img src="./assets/imgs/partfolio/img1Mobile1x.webp" alt="Навушники">
+            </picture>
+        </li>
 
-                
-                <img srcset="./assets/imgs/team/1x/work1.webp 1x,
-                ./assets/imgs/team/2x/work2.webp 2x,
-                ./assets/imgs/team/3x/work3.webp 3x " 
-                src="./assets/imgs/team/1x/work1.webp" alt="робітник">
 
-
-
-                <!-- це звичаний контейнер для тегів source можна перерахувати можливі варіанти картинок-->
-                <picture>
-                    <source srcset="
-                    ./assets/imgs/team/1x/work1.webp 1x,
-                    ./assets/imgs/team/2x/work2.webp 2x,
-                    ./assets/imgs/team/3x/work3.webp 3x" media="" type="image/webp" sizes=""/>
-                    <img src="./assets/imgs/team/1x/work1.webp" alt="">
-                </picture>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+    </ul>
 </body>
 </html>
